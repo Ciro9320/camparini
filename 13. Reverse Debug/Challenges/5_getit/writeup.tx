@@ -1,0 +1,8 @@
+apro il file con gdb e anche con ida
+vedo subito che ci sono una serie di cicli ma non mi interessa molto quello
+che fanno, l'unica cosa che mi interessa è che genera unala flag ma
+incopleta e il secondo ciclo la riempie con i carattere giusti
+performo un disas sul main e cerco l'indirizzo di quando fa la chiamata alla
+funzione strlen e inoltre metto un breakpoint li
+ranno il programma e poi posso stampare il registro rdi con il comado x/s
+e ho la flag corretta

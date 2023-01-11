@@ -1,0 +1,6 @@
+il programma è a 32 bit e quindi non riesco ad eseguirlo!
+
+utilizzando tools come radare o ida non noto nulla di "sospetto"
+eseguo il programma e provo a inserire degli username e password...
+inserendo in entrambi i campi una stringa vuota viene stampato a video “this-password-is-a-secret-to-everyone!”
+decido di riprovare con quella stringa come password e trovo la flag

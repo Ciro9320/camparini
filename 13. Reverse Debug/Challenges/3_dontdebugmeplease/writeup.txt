@@ -1,0 +1,14 @@
+quando eseguo il programma da gdb questo rileva che sto usando un debugger
+con radare o ida ispeziono il main e vedo che non c'è nessuna stamapa del
+messaggio di errore quindi suppongo che il messaggio sia stampato prima 
+del main e cerco la funzione init e la trovo e ispeziono quella e proprio
+li trovo la stampa del messaggio di errore. qui posso vedere una chiamata 
+ad una funzione ptrace e successivamente un controllo (rax == -1) decido
+dunque di modificare il jump successivo da jne -> nop
+ora possiamo dissasemblare il main -> disas main
+noto che c'è una chiamata a fgets e successivamente viene utilizato strlen
+per verificare se la stringa di input sia di 7 caratteri e inoltre c'è
+una strcmp, decido di inserire un breakpoint proprio in quella posizione
+ranno il programmo e inserisco una stringa a caso di 7 caratteri e poi 
+raggiungo il breakpoint. eseguo il comando
+-> x/s 0x555... (registo rsi) e stampo la flag  

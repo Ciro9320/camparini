@@ -1,0 +1,14 @@
+ispezionando vedo la funzione che decripta la flag
+utillizzo il tool gdb per riuscire a stamparla a video
+-> disas decrypt_flag
+il comando mostrerà una serie di istruzioni e quella che ci interessa 
+è verso la fine prima della chiamata alla funzione putchar
+creo così un break point a quell'istruzione con il il comando
+-> b *0x00000000004008a8
+runno il programma con il comando r o run
+e ora si interropenrà per il breakpoint messo in precedenza e posso
+leggegere la variabile che mi interessa con il comando
+-> printf "%s", (char*) flag_buf
+o eventualmente con il comando
+-> x/s 0x602260
+e ho così la flag

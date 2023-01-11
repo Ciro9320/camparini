@@ -1,0 +1,11 @@
+l'esercizio chiede di inserire in input un pin di 4 cifre per poter accedere
+al proprio conto
+provando ad inserire dei numeri a caso vedo già che il pin cambia di volta
+in volta come se fosse generato in modo randomico, inizio ad ispezionare con
+i soliti tools
+noto subito come già detto che il pin è generato da una funzione rand e successivamente
+c'è un controllo con il numero inserito in input
+decido i patchare il controllo sostituendo il comando jnz -> jz
+sostituisco trammite un hex editor l'istruzione 75 D5 con 74 D5 (oppure potevo sostituire
+con un NOP -> 90 90)
+ora vado a eseguire il file patchato e ottengo la flag

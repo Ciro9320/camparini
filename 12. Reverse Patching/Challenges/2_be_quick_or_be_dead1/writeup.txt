@@ -1,0 +1,6 @@
+l'esercizio cerca di calcolare la chiave ma non riesce...
+grazie ai soliti tools scopro che c'è un timer impostato a 1 secodo e allo scadere
+del timer termina l'esecuzione
+quindi la mia idea (ce ne sono molte altre soluzioni) è quella di modificere il timer 
+e impostarlo su 60s
+ho patchato il file e rieseguendolo stampa la flag corretta e decriptata

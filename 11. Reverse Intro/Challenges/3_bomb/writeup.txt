@@ -1,0 +1,33 @@
+eseguo il programma il quale mi chiede degli input
+utilizzo i soliti tools per trovare l'input corretto
+
+--fase 1--
+ispeziono la funzione che descive la fase 1 e noto subito che fa un controllo di uguaglianza 
+tra la mia stringa inserita e la stringa "Border relations with..."
+decido dunque di inserire quella come input e passo la prima fase
+
+--fase 2--
+ispezionado la funzione inerente alla seconda fase noto che chiede in input 6 numeri
+quindi immagino un input del tipo x1 x2 x3 x4 x5 x6
+successivamente noto un ciclo con dei controlli sulle cifre inserite e in particolare
+    mov eax, [rbx - 4]: eax    -> eax contiene array[i - 1] perchè rbx = array[i]
+    add eax, eax               -> eax = array[i - 1] * 2
+    cmp [rbx], eax             -> controllo che array[i] = eax che è array[i - 1] * 2
+quindi capisco che la sequenza in input è 1 2 4 8 16 32 e passo la seconda fase
+
+--fase 3--
+la terza fase è composta da uno switch e in input vengono chiesti due numeri
+noto che questi numeri sono salvati nelle varibili “18h + var_10” e “18h+var_C”
+le quali vengono utilizzate rispettivamente per segliere lo switch case e la seconda per
+confrontare il valore all'interno del case
+quindi decito di optare per il case 0 e il confronto viene fatto con CF che in decimale corrisponde a 207
+inserisco dunque 0 207 come input e passo la terza fase
+
+--fase 4--
+anche nella quarta fase vengono richiesti due interi come input e noto subito che il secondo deve essere uguale
+a 0 ed il primo deve essere minore o uguale a 14
+successivamente noto una chiamata ad una funzione ricorsiva e qui dobbiamo capire come arrivare al caso base
+senza passare per tutte le altre chiamate. quindi bisogna capire come è definito il caso base
+l'input corretto è 7 0
+
+abbiamo finito in quanto l'esercizio chiedeva di superare le prime 4 fasi

@@ -1,0 +1,13 @@
+programma per 32 bit non riesco ad eseguirlo!
+
+come lo scorso funmail provo ad inserire su username e password
+stringa vuota e proprio come la volta scorsa stampa la stringa
+“More-secure-password” e dunque provo a inserire username e password
+trovata ma lancia un errore e termina l'esecuzione. apro i soliti tools
+e noto che non viene mai chiamata la funzione di stampa delle email,
+bensì viene sempre stampato il messaggio di errore
+utilizzo il tool gdb per risolvere il problema
+-> gdb <nomefile>
+e successivamente metto un breakpoint sul main con il comado break main
+successivamente uso il comando run per eseguire il file e il comando
+jump showEmails eseguira la suddetta funzione la quale stampa la flag

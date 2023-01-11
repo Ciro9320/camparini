@@ -1,0 +1,5 @@
+se ranno il programmo con gdb la maggior parte dei test falliscono
+apro il file con ida 
+modifico l'istruzione xor eax, eax 
+FF 13 -> 31 CO
+ora tutti i test sono passati

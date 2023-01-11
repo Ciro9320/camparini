@@ -1,0 +1,9 @@
+Il programma mi chiede di inserire il corretto pin.
+apro il programma con radare (si può utilizzare eventualmente anche ida)
+-> r2 <nomefile>
+una volta aperto e dopo aver digitato aaaa utilizzo il comanfo afl per vedere tutte le funzioni
+decido dunque di ispezionare il main con il comado
+-> pdf @ <nomefunzione>
+noto che fa dei controlli "sospetti" sul pin richiesto all'utente
+in particolare controlla se l'input inserito sia uguale a Fl4g
+decido di provare Fl4g come pin e stampa la flag
