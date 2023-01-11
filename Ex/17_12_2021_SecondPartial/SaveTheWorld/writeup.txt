@@ -1,0 +1,10 @@
+il programma ci presenta davanti un combattimente tra dei personaggi
+tuttavia il personaggio selezionato è troppo debole e necessitiamo
+di un personaggio più forte e infatti il programma ci chiede in input
+se abbiamo qualche obiezione sul personaggio dato.
+spulciando con radare il codice noto che c'è un uteriore personaggio nascosto
+tra il codice e quindi decido di sfondare il buffer dell'input e noto subito
+che il ciò provoca una modifica al personaggio modificato. con il tool gdb
+determino l'offset del garbage e concateno il tutto con le informazione
+sul nuovo personaggio trovate sul codice e invio la stringa e ottengo la flag
+soluzione a ex.py

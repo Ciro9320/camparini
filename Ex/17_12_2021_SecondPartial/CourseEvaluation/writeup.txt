@@ -1,0 +1,8 @@
+il programma ci presenta un questionario già compilato ma manca ancora
+un campo da inserire che fa la parte del buffer. guardando il codice
+con radare scopro che è presente un'altra compilazione del questionario
+presubimilmente quella corretta. provando a inserire carattere a caso
+nel campo di input e in particolare sforando il buffer vedo che l'output
+cambia. con gdb trovo l'offset e così compongo una stringa da inserire
+composta da del garbage più le informazioni per comporre il questionario
+in modo corretto e ottengo la flag 

@@ -1,0 +1,22 @@
+una volta avvito il programma ci viene chiesto il nostro
+nome. senza perdere troppo tempo con input a caso decido di ispezionare
+il codice con radare e noto che l'input da me iserito viene confrontato 
+con la string "SumitiLover1234" e quindi decido di inserila e passo il primo ostacolo
+successivamente mi viene chiesto di inserire un sandwitch, ispeziono così la funzione
+che richiede questo input e noto che fa un confronto con una serie di caratteri
+ma noto che l'ordine è diverso e corrisponde a quello delle varibili locali dichirate
+sopra le quali contengono i caratteri della mia stringa insetita. capisco
+così che l'input corretto è "F4nTa51A"
+dopo mi vengono chiesto 4 numeri corrispondenti agli ingredienti del panino
+e intuisco che il pin è generato da una funzione rand. tuttavia non posso patchare 
+il file e quindi decido di inserire un breakpoint con il tool gdb e leggere il contenuto
+del registro eax per scoprire il pin
+-> gdb sumiti
+-> b *0x555555555683 (trovato guadando con radare o ida o anche gdb)
+-> r (o run)
+-> faccio i vari input trovati in precedenza fino al breakpoint e una volta raggiunto stampo il registro
+-> print $eax
+-> qui dovro convertire il numero da hex a decimale e così trovo il pin generato dal rand
+-> c (per continuare con l'esecuzione)
+-> iserire il pin appea convertito
+e così si ottiene la flag

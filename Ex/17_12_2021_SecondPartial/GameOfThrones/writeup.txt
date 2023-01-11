@@ -1,0 +1,5 @@
+dopo aver avviato il programma mi rendo conto subito
+che è un classico esercizio GOT infatti mi viene chiesto 
+il what e where (attento all'ordine). dopo aver ispezionato
+il codice con radare trovo le funzioni per comporre lo
+script python. soluzione su ex.py

@@ -1,0 +1,9 @@
+una volta avviato il programma leggo le istruzioni stampate
+a schermo capisco che per avere la flag devo superare 16 step
+i quali richiedono la scelta tra L o R scelte generare da una
+funzione rand. visto che posso patchare il file decido di ispezionarlo
+e modificare la funzione sopra citata così che estrae solo una delle 
+due lettere nel mio caso estrae solo la L
+ora non ci resta che creare lo script python per evitarci di inserire
+la lettere per 16 volte
+soluzione su ex.py
