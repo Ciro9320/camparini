@@ -1,0 +1,6 @@
+questa challenge consite nel fare una shellcode attack
+quindi l'unica cosa da fare è quella di cercare una shell
+compatibile con la nostra macchina e inserire normalmente
+senza del garbage aggiuntivo
+http://shell-storm.org/shellcode/ trovi le shell
+scriviamo il codice su ex.py

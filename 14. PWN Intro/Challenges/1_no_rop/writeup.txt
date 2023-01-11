@@ -1,0 +1,6 @@
+eseguo il programma e mi richiede una password
+apro il .c fornito e verifico che la password richiesta (var char buff[8])
+ha un buffer di lunghezza 8 caratteri, successivamente vedo
+che il programma verifica una varibile pass che adrò a sovrescrivere sfondando
+il buffer di 8 caratteri
+stampa così la flag

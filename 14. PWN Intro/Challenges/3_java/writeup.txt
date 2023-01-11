@@ -1,0 +1,10 @@
+aprendo il .c noto una strutture con un buffer e delle 
+funzioni. capisco che devo creare una stringa contenente 
+la parola "java" del garbage fino a raggiungere i 32
+caratteri e infine l'indirizzo del'istruzione execlp("/bin/sh", "/bin/sh", NULL);
+della funzione bash() quindi mi prendo l'indirizzo usando
+il tool gdb
+-> gdb <nomefile>
+-> disas <nomefunzione>
+trovo l'indirizzo che mi interessa: 0x00000000004007a2
+ora scrivo la soluzione su ex.py

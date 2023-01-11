@@ -1,0 +1,6 @@
+il programma è in a 32 bit non posso eseguirlo!
+
+guardo il .c e noto il solito buffer di 64 caratteri e un'ulteriore
+stringa da 4 caratteri. il programma ci chiede di inserire all'interno del
+buffer una striga e se supera i controlli stampa la flag
+guarda ex.py

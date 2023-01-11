@@ -1,0 +1,10 @@
+programma a 32bit non posso eseguirlo!
+
+aprendo il .c dato noto il solito buffer e delle funzioni
+la funzione lol() in particolare è quella che fa al caso nostro
+l'obiettivo è quello di iserire del garbage dopo aver trovato il
+giusto offset con il tool gdb e i vari comadi di pattern create e
+search, successivamente aggiungere anche l'indirizzo della funzione
+lol() ricavata da ELF con il metodo symbols e infine aggiungere al
+tutto una shell
+scriviamo il codice in ex.py

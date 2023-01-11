@@ -1,0 +1,20 @@
+programma a 32bit non posso eseguirlo!
+
+le challenge GOT sono molto semplici e seguono tutte lo
+stesso pattern: chiedono tutte degli input su where e what
+anche con ordine diverso e l'unica cosa da ricordare è chiedono
+-> where = got[...]
+-> what = symbols[...] (oppure functions[...].address)
+
+tuttavia in questo esercizio i fenomeni usano indirizzo che io e
+bettino definiamo forse impropriamente statici e non quelli reali di 
+esecuzione che chiamiamo dinamici. quindi dobbiamo trovarci questi indirizzi
+e lo facciamo con radare. l'indirizzo di what (indirizzo della funzione win()) 
+lo si trova facimlmente dalla lista di funzioni con i propri indirizzi grazie 
+al comando afl e invece quello della funzione di got (where) ovvere la funzione
+da "sostituire" la funzione puts() lo si trova operando il comando
+-> pdf @ <nomefunzione>
+il quale ci mostrerà il codice assembly della funzione e li possiamo vedere una
+chiamata ad un indirizzo che sarà proprio l'indirizzo che noi andremo a
+sostituire
+ora possiamo realizzare il codice in ex.py

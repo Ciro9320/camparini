@@ -1,0 +1,6 @@
+questo esercizio è identico a quello precedente
+c'è sempre un buffer e una funzione mai chiamata che stampa la flag
+con radare ci prendiamo l'indirizzo della funzione
+o eventualmente si puo usare ELF e in particolare il metodo symbols[nomefunzione]
+e con gdb come prima si trova l'offset che è di 40
+scriviamo il codice su ex.py

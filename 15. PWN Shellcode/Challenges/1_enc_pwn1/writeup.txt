@@ -1,0 +1,25 @@
+il file è stato compilato per macchine a 32bit non posso eseguirlo!
+
+aprendo il file .c vedo il solito buffer che andremo ad
+utilizare come vulnerabilità e una funzione shell mai 
+richiamata. quindi l'obiettivo è quello di comporre una
+stringa garbage fino al raggiungimento dell'offset ed in 
+più l'indirizzo per la funzione shell()
+con gdb creo un patter e poi ranno e faccio la pattern search per 
+trovare l'offset giusto
+-> gdb <nomefile>
+-> pattern create <dimensione> <nomepattern>
+-> r < <nomepattern> (o in alternativa uso run)
+-> patter search (di solito si mette una stringa che trovi nella schermata che
+    appare una volta eseguito il programma, ho notano che indipendentemente alla
+    stringa l'offset è sempre quello)
+scegliere l'offset corretto che nella mia esperienza ho visto che i fenomeni
+lo scelgono sempre in una posizione diversa quindi consiglio di fare un po' di
+prove e trovare quello corretto
+in questa challenge l'offset è 140 quindi manca solo l'indirizzo della funzione che
+troviamo con radare
+-> r2 <nomefile>
+-> aaaa
+-> afl (lista delle funzioni del programma)
+e proprio li troveremo l'indirizzo della funzione proprio accanto al suo nome
+ora abbiamo tutto il necessario per scrivere il codice python in ex.py

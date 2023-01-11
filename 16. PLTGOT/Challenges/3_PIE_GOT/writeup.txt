@@ -1,0 +1,7 @@
+programma a 32bit e non posso eseguirlo!
+
+questa challenge si presenta in modo identico alla precendente
+abbiamo il metodo oh_look_usefull() che spowna la shell il quale non è mai
+richiamato e la richiesta di due input che corrispondono a 
+where e what quindi senza perdere troppo altro tempo procediamo
+con la soluzione su ex.py
