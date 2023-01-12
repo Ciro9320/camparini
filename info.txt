@@ -1,1 +1,7 @@
-Link utili: https://github.com/augustozanellato/Cybersec2021
+Link utili: 
+
+https://github.com/augustozanellato/Cybersec2021
+
+https://www.olderprogram.com/numeri/tabella36.gif  (tabella conversione caratteri hex - dec)
+
+http://ref.x86asm.net/coder64.html  (tabella istruzioni assembly)

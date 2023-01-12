@@ -1,0 +1,24 @@
+GDB
+-> gdb ./<nomefile> : per aprire il file
+-> disas <nomefunzione> : (equivalente a guardare il codice di una funzione
+        identica a pdf @ <nomefunzione> di radare)
+-> r o run : per eseguire il file 
+-> c : per continuare l'esecuzione precedentemente interrotta
+-> b *<indirizzo> : per creare un breakpoint
+-> x/s <indizzo> : stampare variabile
+-> print <$nomeregistro> : stampare registro (es: print $eax)
+-> printf "%s", (char*) <nomevaribile> : per stampare una varibile
+serie di comandi per trovare l'offset:
+-> pattern create <dimensione> <nomepattern> : (es: pattern create 100 pat100)
+-> r < <nomepattern> : (es: r < pat100)
+-> pattern search <varibile> : (es: pattern search AAAAAAA)
+
+RADARE
+-> r2 ./<nomefile> : per aprire il file
+-> aaaa : subito dopo aver aperto il file
+-> afl : per l'elenco delle funzioni de programma
+-> pdf @ <nomefunzione> : per guardare il codice della funzione
+-> iz : per vedere le stringe del programma
+
+COMANDI GENERALI
+-> checksec <nomefile> : stampa informazioni file
